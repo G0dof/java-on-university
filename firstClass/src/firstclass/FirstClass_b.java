@@ -1,5 +1,6 @@
 package firstclass;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class FirstClass_b {
     public static void main(String[] args){
@@ -17,6 +18,7 @@ public class FirstClass_b {
         resto = num1%num2;
         System.out.println("A partir dos números "+num1+" e "+num2+", podemos efetuar as seguintes operações:");
         System.out.println("SOMA: "+soma+" | SUBTRAÇÃO: "+sub+" | MULTIPLICAÇÃO: "+mult+" | MÓDULO: "+resto);
-
+        // OR
+        JOptionPane.showMessageDialog(null, "SOMA: "+soma+" | SUBTRAÇÃO: "+sub+" | MULTIPLICAÇÃO: "+mult+" | MÓDULO: "+resto);
     }
 }
