@@ -1,8 +1,8 @@
-package firstclass;
+package Aula01;
 
 import javax.swing.JOptionPane;
 
-public class FirstClass_a {
+public class Aula01_A {
 
     public static void main(String[] args) {
         System.out.println("Eu sei programar em Java");
