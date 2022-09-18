@@ -34,6 +34,5 @@ public class Ex01 {
         // System.out.printf("A distância entre os pontos P1(%.1f, %.1f) e P2(%.1f, %.1f) é %.2f%n", x1, y1, x2, y2, formula);
         // OR
         JOptionPane.showMessageDialog(null, "A distância entre os pontos P1(" + x1 + ", " + y1 + ") e P2(" + x2 + ", " + y2 + ") é " + formula);
-
     }
 }

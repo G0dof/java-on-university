@@ -2,6 +2,12 @@ package Exercises;
 
 import java.util.Scanner;
 
+
+/*
+ * @author Pedro Ferreira Sudre
+ * realizado dia 14/09/2022
+ */
+
 public class Ex02 {
 
     public static void main(String[] args) {
