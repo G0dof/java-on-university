@@ -19,7 +19,7 @@ public class Ex04 {
         num2 = leia.nextInt();
         System.out.print("Digite a operação a ser realizada: \n\n(+) Soma\n(-) Subtração\n(*) Multiplicação\n(/) Divisão\n(%) Módulo\n\n-> ");
         operador = leia.next().charAt(0);
-
+/* 
         switch (operador) {
             case '+':
                 System.out.printf("A soma entre os números %d e %d é %d%n", num1, num2, num1 + num2);
@@ -43,6 +43,13 @@ public class Ex04 {
 
             default:
                 System.out.println("Opção inválida!");
-        }
+        } */
+
+        System.out.println(operador == '+' ? "A soma entre os números "+num1+" e "+num2+" é "+(num1+num2) : "");
+        System.out.println(operador == '-' ? "A soma entre os números "+num1+" e "+num2+" é "+(num1-num2) : "");
+        System.out.println(operador == '*' ? "A soma entre os números "+num1+" e "+num2+" é "+(num1*num2) : "");
+        System.out.println(operador == '/' ? "A soma entre os números "+num1+" e "+num2+" é "+(num1/num2) : "");
+        System.out.println(operador == '%' ? "A soma entre os números "+num1+" e "+num2+" é "+(num1%num2) : "");
+        
     }
 }
