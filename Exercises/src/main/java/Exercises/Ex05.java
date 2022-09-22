@@ -2,6 +2,11 @@ package Exercises;
 
 import java.util.Scanner;
 
+/*
+ * @author Pedro Ferreira Sudre
+ * realizado dia 22/09/2022
+ */
+
 public class Ex05 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
