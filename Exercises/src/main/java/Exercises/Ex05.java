@@ -9,6 +9,37 @@ import java.util.Scanner;
 
 public class Ex05 {
     public static void main(String[] args) {
+        /* Algoritmo realizado no Portugol Studio
+        
+        programa {
+    
+                inclua biblioteca Matematica --> mat
+    
+                funcao inicio() {
+                inteiro a, b, c, delta
+
+                escreva("Insira o valor a: ")
+                leia(a)
+                escreva("Insira o valor b: ")
+                leia(b)
+                escreva("Insira o valor c: ")
+                leia(c)
+
+                delta = (mat.potencia(b, 2)) - (4 * a * c)
+                se (delta <= 0) escreva("Não será possível calcular as raízes pois o delta "+delta+" é negativo")
+                senao Bhaskara(a, b, c, delta)
+
+            }
+
+            funcao vazio Bhaskara(inteiro a, inteiro b, inteiro c, inteiro delta){
+                real x1 = (-b + mat.raiz(delta, 2.0))/(2*a)
+                real x2 = (-b - mat.raiz(delta, 2.0))/(2*a)
+                escreva("Delta: "+delta+"\nRaiz x1: "+x1+"\nRaiz x2: "+x2)
+            }
+        }
+        
+        */
+        
         Scanner leia = new Scanner(System.in);
         int a, b, c, delta;
 
