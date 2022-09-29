@@ -1,6 +1,3 @@
-/**
- * It reads three numbers from the user and prints the largest of them
- */
 package aula04;
 
 import java.util.Scanner;
