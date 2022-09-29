@@ -1,4 +1,4 @@
-package aula05;
+package Aula05;
 
 public class Aula05_C {
     public static void main(String[] args) {

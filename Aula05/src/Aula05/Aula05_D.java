@@ -1,4 +1,4 @@
-package aula05;
+package Aula05;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class Aula05_D {
         System.out.print("Digite o número para finalizar a tabuada: ");
         fim = (int) leia.nextDouble();
 
-        for (int i = fim; fim <= inicio; i++) {
+        for (int i = inicio; i <= fim; i++) {
             resp = x * i;
             System.out.printf("%.0f x %d = %.0f%n", x, i, resp);
         }
