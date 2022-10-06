@@ -9,13 +9,13 @@ public class Aula04_A {
         float n1, n2, n3, nMaior = 0;
 
         System.out.print("Insira um número: ");
-        n1 = leia.nextFloat();
+        n1 = leia.nextFloat(); 
         if (nMaior < n1){
             nMaior = n1;
         }
 
         System.out.print("Insira outro número: ");
-        n2 = leia.nextFloat();
+        n2 = leia.nextFloat(); 
         if (nMaior < n2){
             nMaior = n2;
         }
