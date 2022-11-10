@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Ex18 {
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
-        int numeros[] = new int[5], soma = 0, mult = 0;
+        int numeros[] = new int[5], soma = 0, mult = 1;
         for (int i = 0; i < numeros.length; i++) {
             System.out.printf("Insira o %d° número: ", i + 1);
             numeros[i] = leia.nextInt();
