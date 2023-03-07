@@ -1,5 +1,4 @@
 package Exercicios;
-
 public class Cliente {
 
     String nome;

@@ -1,5 +1,4 @@
 package Exercicios;
-
 public class Curso {
 
     String grauAcademico;
