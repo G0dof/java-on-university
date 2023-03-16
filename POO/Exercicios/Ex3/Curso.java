@@ -16,18 +16,29 @@ public class Curso {
     }
 
     public void cadastraCurso(){
+        System.out.print("Insira o nome do curso: ");
         nome = leia.next();
+        
+        System.out.print("Insira a quantidade de alunos: ");
         quantidadeAlunos = leia.nextInt();
+        
+        System.out.print("Insira qual a turma: ");
         turma = leia.next();
+        
+        System.out.print("Insira o valor da mensalidade: ");
         mensalidade = leia.nextFloat();
+
     }
     public void imprimeDados(){
-
+        System.out.printf("Nome do curso: %s%n", nome);
+        System.out.printf("Quantidade de alunos: %d%n", quantidadeAlunos);
+        System.out.printf("Turma: %s%n", turma);
+        System.out.printf("Valor da mensalidade: %f%n",calculaTotalMensalidade());
     }
 
     public Float calculaTotalMensalidade(){
-        if (quantidadeAlunos >= 50){
-            return  mensalidade+(mensalidade*0.5f);
+        if (mensalidade > 350){
+            return  mensalidade+(mensalidade*0.3f);
         }
         return mensalidade;
     }
