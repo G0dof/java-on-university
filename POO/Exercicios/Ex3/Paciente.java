@@ -31,7 +31,7 @@ public class Paciente {
         endereco = leia.nextLine();
         System.out.print("Insira o seu telefone: ");
         telefone = leia.nextLine();
-        System.out.print("Insira a sua data de nascimento: ");
+        System.out.print("Insira o ano de seu nascimento: ");
         anoNascimento = leia.nextInt();
         System.out.print("Insira a sua profissão: ");
         profissao = leia.next();
