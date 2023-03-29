@@ -21,7 +21,7 @@ public class Principal {
 
         paciente2.nome  = "Joana";
         paciente2.rg = "98.312.043-5";
-        paciente2.endereco = "Rua Juninho Gameplays, nº123";
+        paciente2.endereco = "Rua Juninho Gamepl        ays, nº123";
         paciente2.telefone = "+69(11)94002-8922";
         paciente2.anoNascimento = 2003;
         paciente2.profissao = "Autônomo";
