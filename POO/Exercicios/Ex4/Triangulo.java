@@ -15,7 +15,7 @@ public class Triangulo {
     }
 
     public void imprimeDados() {
-        System.out.printf("A área do triângulo com base %.1f e %.1f é igual a %.1f%n",
+        System.out.printf("A área do triângulo com base %.1f e altura %.1f é igual a %.1fm²%n",
                 getBase(), getAltura(), calculaArea());
     }
 
