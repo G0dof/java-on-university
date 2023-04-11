@@ -17,7 +17,8 @@ public class Principal {
         do {
             exibirMenu();
             opcao = leia.nextInt();
-
+            int cont = 0;
+            
             switch (opcao) {
                 case 1:
                     System.out.print("Informe o seu nome: ");
@@ -61,8 +62,11 @@ public class Principal {
                             System.out.printf("\nO saldo do %s é R$%.2f%n\n", b.cliente.nome, b.saldo);
                             break;
                         } else {
-                            System.out.println("\nA conta informada não existe\n");
+                            cont += 1;
                         }
+                    }
+                    if (cont == contas.size()-1){
+                        System.out.println("\nA conta informada não existe\n");
                     }
                     break;
                 case 4:
@@ -91,10 +95,14 @@ public class Principal {
                                 System.out.printf("Saldo após o saque: R$%.2f%n\n", b.saldo);
                             }
                             break;
-                        } else {
-                            System.out.println("\nA conta informada não existe\n");
-                            continue;
                         }
+                        else {
+                            cont += 1;
+                        }
+                            
+                    }
+                    if (cont == contas.size()-1) {
+                        System.out.println("\nA conta informada não existe\n");
                     }
                     break;
                 case 6:
