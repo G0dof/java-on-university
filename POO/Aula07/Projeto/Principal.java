@@ -84,18 +84,17 @@ public class Principal {
 
                             if (saque > b.saldo) {
                                 System.out.println("\nSaldo insuficiente\n");
-                                break;
                             } else {
                                 System.out.printf("\nSaldo atual: %.2f%n Saldo após o saque: %.2f%n\n",
                                         b.saldo,
                                         b.saldo - saque);
-                                break;
                             }
+                            break;
                         } else {
                             System.out.println("\nA conta informada não existe\n");
-                            break;
                         }
                     }
+                    break;
                 case 6:
                     System.out.print("Informe número da conta: ");
                     numeroConta = leia.nextInt();
@@ -107,9 +106,9 @@ public class Principal {
                             System.out.printf("\nSaldo atual: %.2f%nSaldo após o depósito: %.2f%n\n",
                                     b.saldo,
                                     b.saldo + deposito);
+                            break;
                         } else {
                             System.out.println("\nA conta informada não existe\n");
-                            break;
                         }
                     }
                     break;
