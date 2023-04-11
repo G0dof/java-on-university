@@ -65,7 +65,7 @@ public class Principal {
                             cont += 1;
                         }
                     }
-                    if (cont == contas.size()-1){
+                    if (cont == contas.size()){
                         System.out.println("\nA conta informada não existe\n");
                     }
                     break;
@@ -99,9 +99,8 @@ public class Principal {
                         else {
                             cont += 1;
                         }
-                            
                     }
-                    if (cont == contas.size()-1) {
+                    if (cont == contas.size()) {
                         System.out.println("\nA conta informada não existe\n");
                     }
                     break;
@@ -121,7 +120,7 @@ public class Principal {
                             cont += 1;                            
                         }
                     }
-                    if(cont == contas.size()-1) {
+                    if(cont == contas.size()) {
                         System.out.println("\nA conta informada não existe\n");
                     }
                     break;
