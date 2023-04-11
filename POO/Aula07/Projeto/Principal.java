@@ -118,9 +118,11 @@ public class Principal {
                             System.out.printf("Saldo após o depósito: R$%.2f%n\n", b.saldo);
                             break;
                         } else {
-                            System.out.println("\nA conta informada não existe\n");
-                            continue;
+                            cont += 1;                            
                         }
+                    }
+                    if(cont == contas.size()-1) {
+                        System.out.println("\nA conta informada não existe\n");
                     }
                     break;
                 case 7:
