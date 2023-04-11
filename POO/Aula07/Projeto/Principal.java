@@ -88,7 +88,7 @@ public class Principal {
                                 
                                 System.out.printf("\nSaldo atual: R$%.2f%n", b.saldo);
                                 b.saldo -= saque;
-                                System.out.printf("Saldo após o saque: R$%.2f%n\n", b.saldo)
+                                System.out.printf("Saldo após o saque: R$%.2f%n\n", b.saldo);
                             }
                             break;
                         } else {
