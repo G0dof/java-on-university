@@ -31,7 +31,7 @@ public class Principal {
                 case 2:
                     System.out.print("Digite o número da conta: ");
                     int numeroConta = leia.nextInt();
-                    System.out.print("Digite o saldo inicial da conta: ");
+                    System.out.print("Digite o saldo inicial da conta: R$");
                     double saldo = leia.nextDouble();
                     System.out.print("Digite o CPF do titular da conta: ");
                     cpf = leia.next();
@@ -58,7 +58,7 @@ public class Principal {
 
                     for (Banco b : contas) {
                         if (b.numConta == numeroConta) {
-                            System.out.printf("\nO saldo do %s é %.2f%n\n", b.cliente.nome, b.saldo);
+                            System.out.printf("\nO saldo do %s é R$%.2f%n\n", b.cliente.nome, b.saldo);
                             break;
                         } else {
                             System.out.println("\nA conta informada não existe\n");
@@ -67,7 +67,7 @@ public class Principal {
                     break;
                 case 4:
                     for (Banco b : contas) {
-                        System.out.printf("\nConta: %d%nSaldo: %.2f%nCliente: %s%n\n",
+                        System.out.printf("\nConta: %d%nSaldo: R$%.2f%nCliente: %s%n\n",
                                 b.numConta,
                                 b.saldo,
                                 b.cliente.nome);
@@ -85,13 +85,15 @@ public class Principal {
                             if (saque > b.saldo) {
                                 System.out.println("\nSaldo insuficiente\n");
                             } else {
-                                System.out.printf("\nSaldo atual: %.2f%n Saldo após o saque: %.2f%n\n",
-                                        b.saldo,
-                                        b.saldo - saque);
+                                
+                                System.out.printf("\nSaldo atual: R$%.2f%n", b.saldo);
+                                b.saldo -= saque;
+                                System.out.printf("Saldo após o saque: R$%.2f%n\n", b.saldo)
                             }
                             break;
                         } else {
                             System.out.println("\nA conta informada não existe\n");
+                            continue;
                         }
                     }
                     break;
@@ -103,12 +105,13 @@ public class Principal {
                             System.out.print("Insira o valor de saque: ");
                             double deposito = leia.nextDouble();
 
-                            System.out.printf("\nSaldo atual: %.2f%nSaldo após o depósito: %.2f%n\n",
-                                    b.saldo,
-                                    b.saldo + deposito);
+                            System.out.printf("\nSaldo atual: R$%.2f%n", b.saldo);
+                            b.saldo += deposito;
+                            System.out.printf("Saldo após o depósito: R$%.2f%n\n", b.saldo);
                             break;
                         } else {
                             System.out.println("\nA conta informada não existe\n");
+                            continue;
                         }
                     }
                     break;
