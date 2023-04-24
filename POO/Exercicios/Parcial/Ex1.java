@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 /*
  * NOME: PEDRO FERREIRA SUDRE
- * RGM: 5829372437
  */
 
 public class Ex1 {
