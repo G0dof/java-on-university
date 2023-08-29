@@ -1,7 +1,7 @@
 package Aula3.Vetor2;
 
 public class Vetor2 {
-    private String[] elementos;
+    private Object[] elementos;
     private int tamanho;
 
     public Vetor2(int capacidade) {
@@ -9,7 +9,7 @@ public class Vetor2 {
         this.tamanho = 0;
     }
 
-    public void adiciona(String elemento) throws Exception {
+    public void adiciona(Object elemento) throws Exception {
         this.aumentaCapacidade();
         this.elementos[this.tamanho] = elemento;
         this.tamanho++;
@@ -38,19 +38,20 @@ public class Vetor2 {
         return s.toString();
     }
 
-    public String buscaPaia(int posicao) throws Exception {
+    public Object buscaPaia(int posicao) throws Exception {
         if (posicao >= 0 && posicao < tamanho) return elementos[posicao];
         else throw new Exception("Posição Inválida!");
     }
 
-    public int buscaLinear(String buscado) {
+    public int buscaLinear(Object buscado) {
         for (int i = 0; i < tamanho; i++) {
-            if (elementos[i].equalsIgnoreCase(buscado)) return i;
+            elementos[i] = elementos[i].toString().toLowerCase();
+            if (elementos[i].equals(buscado)) return i;
         }
         return -1;
     }
 
-    public boolean adicionaInicio(int posicao, String elemento) throws Exception {
+    public boolean adicionaInicio(int posicao, Object elemento) throws Exception {
         if (!(posicao >= 0 && posicao < tamanho)) throw new Exception("Posição Inválida!");
         for (int i = this.tamanho - 1; i >= posicao; i--) this.elementos[i + 1] = this.elementos[i];
         this.elementos[posicao] = elemento;
@@ -62,7 +63,7 @@ public class Vetor2 {
     public void aumentaCapacidade() {
         if (this.tamanho != this.elementos.length) return;
 
-        String[] elementosNovos = new String[this.elementos.length * 2];
+        Object[] elementosNovos = new Object[this.elementos.length * 2];
         for (int i = 0; i < this.elementos.length; i++) elementosNovos[i] = this.elementos[i];
         this.elementos = elementosNovos;
     }
