@@ -1,4 +1,4 @@
-package Aula1.Vetor;
+package Aula1_2.Vetor;
 
 public class Vetor {
     private String[] elementos;
