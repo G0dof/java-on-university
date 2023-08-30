@@ -1,4 +1,4 @@
-package Aula3.Vetor2;
+package Aula3;
 
 public class Contato {
     private String nome;
@@ -14,7 +14,7 @@ public class Contato {
         this.email = email;
     }
 
-    public String getNome() {
+    public Object getNome() {
         return nome;
     }
 
@@ -22,7 +22,7 @@ public class Contato {
         this.nome = nome;
     }
 
-    public String getTelefone() {
+    public Object getTelefone() {
         return telefone;
     }
 
@@ -45,11 +45,5 @@ public class Contato {
                 ", telefone='" + telefone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
-    }
-
-    public void adiciona(Object elemento) throws Exception {
-        this.aumentaCapacidade();
-        this.elementos[this.tamanho] = elemento;
-        this.tamanho++;
     }
 }

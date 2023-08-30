@@ -1,11 +1,11 @@
-package Aula3.Vetor2;
+package Aula3;
 
 public class Vetor2 {
     private Object[] elementos;
     private int tamanho;
 
     public Vetor2(int capacidade) {
-        this.elementos = new String[capacidade];
+        this.elementos = new Object[capacidade];
         this.tamanho = 0;
     }
 
