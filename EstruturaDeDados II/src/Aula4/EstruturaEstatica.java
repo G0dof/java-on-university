@@ -76,7 +76,7 @@ public class EstruturaEstatica<T> {
             throw new IllegalArgumentException("Posição Inválida");
         }
 
-        for (int i = posicao; i < tamanho; i++) {
+        for (int i = posicao; i < tamanho-1; i++) {
             elementos[i] = elementos[i + 1];
         }
         tamanho--;
